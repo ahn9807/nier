@@ -1,0 +1,19 @@
+<scene>
+	<automata type="dfa"/>
+    <internal value="q0 q1 q2 q3 q4"/>
+    <alphabet value="0 1"/>
+    <initial value="q0"/>
+    <transition>
+        <set start="q0" input="0" output="q0"/>
+        <set start="q0" input="1" output="q1"/>
+        <set start="q1" input="0" output="q2"/>
+        <set start="q1" input="1" output="q3"/>
+        <set start="q2" input="0" output="q4"/>
+        <set start="q2" input="1" output="q0"/>
+        <set start="q3" input="0" output="q1"/>
+        <set start="q3" input="1" output="q2"/>
+        <set start="q4" input="0" output="q3"/>
+        <set start="q4" input="1" output="q4"/>
+    </transition>
+    <final value="q0"/>
+</scene>
